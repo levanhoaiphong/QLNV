@@ -26,7 +26,7 @@ getEle("btnXacNhan").addEventListener("click", function () {
 
 
     // Kiểm tra độ dài ký tự
-    valid &= valida.kiemTraDoDai(nhanVien.tenNhanVien, 4, 6, 'error_min_max_tenNhanVien', 'Tên ')
+    valid &= valida.kiemTraDoDai(nhanVien.maNhanVien, 'error_min_max_maNhanVien', 4, 6, 'Ma sinh vien ')
 
     if (!valid) {
         return
@@ -107,3 +107,4 @@ getEle("btnLuu").addEventListener("click", function () {
     }
     renderTable(arrNhanVien);
 })
+

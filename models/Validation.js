@@ -1,6 +1,6 @@
 function Validation() {
     this.kiemTraRong = function (value, selectorError, name) {
-        if (value.trim() != '') {
+        if (value.trim() != "") {
             getEle(selectorError).style.display = "none";
             getEle(selectorError).innerHTML = "";
             return true;
@@ -24,7 +24,7 @@ function Validation() {
     }
 
     this.kiemTraDoDai = function (value, selectorError, minLength, maxLength, name) {
-        if (value.length < minLength || value.length < maxLength) {
+        if (value.length < minLength || value.length > maxLength) {
             getEle(selectorError).style.display = 'block';
             getEle(selectorError).innerHTML = `${name} từ ${minLength} đến ${maxLength}`;
             return false;
